@@ -1,0 +1,25 @@
+{
+    "personagem": {
+        "nome": "Darkizu",
+        "classe": "Programador",
+        "nivel": 1,
+        "experiencia": 50,
+        "ouro": 50
+    },
+    "tarefas": [
+        {
+            "descricao": "Implementar saudações",
+            "dificuldade": "2",
+            "recompensa_ouro": 50,
+            "recompensa_exp": 50,
+            "concluida": true
+        },
+        {
+            "descricao": "Adicionar mais elementos a interface",
+            "dificuldade": "2",
+            "recompensa_ouro": 20,
+            "recompensa_exp": 20,
+            "concluida": false
+        }
+    ]
+}
