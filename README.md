@@ -136,5 +136,5 @@ Este projeto é distribuído sob a licença MIT. Veja o arquivo LICENSE para mai
 
 ---
 
-**Desenvolvido com ❤️ por [Darkizu](https://github.com/seu-usuario)**
+**Desenvolvido com ❤️ por [Rodrigo Cernigoi](https://github.com/RodrigoCernigoi)**
 
