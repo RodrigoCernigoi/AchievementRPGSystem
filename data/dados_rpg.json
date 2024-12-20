@@ -4,7 +4,8 @@
         "classe": "Programador",
         "nivel": 1,
         "experiencia": 50,
-        "ouro": 50
+        "ouro": 50,
+        "itens": []
     },
     "tarefas": [
         {
@@ -12,14 +13,42 @@
             "dificuldade": "2",
             "recompensa_ouro": 50,
             "recompensa_exp": 50,
-            "concluida": true
+            "status": "Concluída"
         },
         {
             "descricao": "Adicionar mais elementos a interface",
             "dificuldade": "2",
             "recompensa_ouro": 20,
             "recompensa_exp": 20,
-            "concluida": false
+            "status": "Concluída"
+        },
+        {
+            "descricao": "Refazer o criar personagem",
+            "dificuldade": "1",
+            "recompensa_ouro": "Primária",
+            "recompensa_exp": 10,
+            "status": 10
+        },
+        {
+            "descricao": "Teste de tarefa",
+            "dificuldade": "1",
+            "recompensa_ouro": "Primária",
+            "recompensa_exp": 0,
+            "status": 0
+        },
+        {
+            "descricao": "teste",
+            "dificuldade": "1",
+            "recompensa_ouro": "Primária",
+            "recompensa_exp": 0,
+            "status": 0
+        },
+        {
+            "descricao": "teste",
+            "dificuldade": "1",
+            "recompensa_ouro": "Primária",
+            "recompensa_exp": 0,
+            "status": 0
         }
     ]
 }

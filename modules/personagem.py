@@ -5,24 +5,20 @@ class Personagem:
         self.nivel = 1
         self.experiencia = 0
         self.ouro = 0
+        self.itens = []  # Lista para armazenar itens do personagem
 
-    def ganhar_ouro(self, quantidade):
-        self.ouro += quantidade
-        return f"{self.nome} recebeu {quantidade} de ouro! Ouro total: {self.ouro}"
+    def adicionar_item(self, item):
+        self.itens.append(item)
+        return f"{self.nome} obteve o item: {item}!"
 
-    def ganhar_experiencia(self, quantidade):
-        self.experiencia += quantidade
-        resultado = f"{self.nome} ganhou {quantidade} de EXP! EXP total: {self.experiencia}\n"
-        resultado += self.verificar_nivel_up()
-        return resultado
+    def remover_item(self, item):
+        if item in self.itens:
+            self.itens.remove(item)
+            return f"{self.nome} perdeu o item: {item}."
+        return f"Item {item} não encontrado no inventário."
 
-    def verificar_nivel_up(self):
-        mensagem = ""
-        while self.experiencia >= self.nivel * 100:
-            self.experiencia -= self.nivel * 100
-            self.nivel += 1
-            mensagem += f"Parabéns! {self.nome} subiu para o nível {self.nivel}!\n"
-        return mensagem
+    def listar_itens(self):
+        return self.itens
 
     def to_dict(self):
         return {
@@ -30,7 +26,8 @@ class Personagem:
             "classe": self.classe,
             "nivel": self.nivel,
             "experiencia": self.experiencia,
-            "ouro": self.ouro
+            "ouro": self.ouro,
+            "itens": self.itens
         }
 
     @classmethod
@@ -39,4 +36,5 @@ class Personagem:
         personagem.nivel = data["nivel"]
         personagem.experiencia = data["experiencia"]
         personagem.ouro = data["ouro"]
+        personagem.itens = data.get("itens", [])
         return personagem
