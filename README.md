@@ -35,8 +35,8 @@ Este projeto é um sistema de tarefas baseado em RPG, desenvolvido em Python uti
 
 1. **Clone o Repositório**:
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
-   cd nome-do-repositorio
+   git clone https://github.com/RodrigoCernigoi/AchievementRPGSystem.git
+   cd AchievementRPGSystem
    ```
 
 2. **Crie um Ambiente Virtual**:
